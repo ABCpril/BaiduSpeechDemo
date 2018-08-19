@@ -1,0 +1,30 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.why.project.baiduspeech">
+
+    <!-- ======================百度语音====================== -->
+    <!-- begin: baidu speech sdk  权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- end: baidu speech sdk  权限 -->
+
+    <application>
+
+        <!-- ======================百度语音========================== -->
+        <!-- 正式发布时，请替换成您自己的appId 本demo的appId会不定时下线 -->
+        <meta-data
+            android:name="com.baidu.speech.APP_ID"
+            android:value="11588936" />
+        <meta-data
+            android:name="com.baidu.speech.API_KEY"
+            android:value="XRF3IOf2tNGePzlv47cBnvF3" />
+        <meta-data
+            android:name="com.baidu.speech.SECRET_KEY"
+            android:value="diC8lQ7XDcGBKQ6FzCpvnan54F5CnMZI" />
+        <service
+            android:name="com.baidu.speech.VoiceRecognitionService"
+            android:exported="false" />
+    </application>
+</manifest>
